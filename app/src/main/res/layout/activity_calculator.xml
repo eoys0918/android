@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textColor="#fffef6"
+        android:gravity="center"
+        android:background="#2e812e"
+        android:text="CALCULATOR"/>
+    <EditText android:id="@+id/et_first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="50dp"
+        android:hint="First Number"/>
+    <EditText android:id="@+id/et_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Number"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <Button android:id="@+id/bt_add"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:layout_width="30dp"
+            android:layout_weight="1" />
+
+        <Button android:id="@+id/bt_subtract"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_width="50dp" />
+
+        <Button android:id="@+id/bt_multi"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="*" />
+
+        <Button android:id="@+id/bt_divide"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="/" />
+
+        <Button android:id="@+id/bt_mod"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:layout_weight="1" />
+
+        <Button android:id="@+id/bt_result"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="="
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#cc0000"
+        android:text="Result : "/>
+
+</LinearLayout>
